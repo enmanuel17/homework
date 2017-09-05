@@ -20,8 +20,14 @@ def check_profanity(text_to_check):
 	#reads the out of the profany check.
 	output = connection.read()
 	#prints the output to the screen
-	print(output)
+	#print(output)
 	connection.close() #closes the connection to the website.
+	if "true" in output:
+		print("Bad word detected!!")
+	elif "false" in output:
+		print("This file does not contain bad words :D")
+	else:
+		print("Could not scan the file properly")
 
 read_text()
 
