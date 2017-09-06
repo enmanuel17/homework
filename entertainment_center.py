@@ -20,5 +20,7 @@ the300spartants = media.Movie("300","King Leonidas of Sparta and a force of 300 
 #the300spartants.show_trailer()
 
 #creates an array that holds the name of each movie object
-movies = [toy_story, avatar, the300spartants]
-fresh_tomatoes.open_movies_page(movies)
+#movies = [toy_story, avatar, the300spartants]
+#fresh_tomatoes.open_movies_page(movies)
+print(media.Movie.__doc__)
+
